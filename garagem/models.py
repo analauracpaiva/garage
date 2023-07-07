@@ -44,7 +44,6 @@ class Veiculo(models.Model):
     acessorios = models.ManyToManyField(Acessorio, blank=True)
 
     def __str__(self):
-        # return self.marca.nome.upper() + ' ' + self.categoria.descricao + ' ' + str(self.ano)  + ' ' + self.cor.descricao
         return f"{self.marca} , {self.categoria} , {self.cor} , {self.ano}"
     
     class Meta:
